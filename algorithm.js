@@ -38,3 +38,13 @@ function rot13(str) {
 }
 
 rot13("SERR YBIR?");
+
+// palindrome checker
+
+function palindrome(str) {
+  
+  var test = str.replace(/[^A-Z0-9]/ig, "").toLowerCase();
+  return test === test.split('').reverse().join("");
+}
+
+palindrome("TOM*&... HANKS");
